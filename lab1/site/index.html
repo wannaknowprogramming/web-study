@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа №1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <p class="label">Веб-программирование</p>
+    <h1>Мой первый веб-сервер</h1>
+    <p>Эта страница доступна через Nginx, работающий в Docker-контейнере.</p>
+
+    <section>
+      <h2>Как работает сайт</h2>
+      <ol>
+        <li>Браузер обращается к адресу <code>localhost:5143</code>.</li>
+        <li>Docker передаёт запрос на порт 80 внутри контейнера.</li>
+        <li>Nginx находит и возвращает файл <code>index.html</code>.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
