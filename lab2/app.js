@@ -6,10 +6,12 @@ let posts = [];
 
 function drawPosts(items) {
   postsElement.innerHTML = items.map((post) => `
-    <article class="post">
-      <h2>${post.title}</h2>
-      <p>${post.body}</p>
-    </article>
+    <li class="post">
+      <article>
+        <h2>${post.title}</h2>
+        <p>${post.body}</p>
+      </article>
+    </li>
   `).join('');
   statusElement.textContent = items.length ? `Найдено публикаций: ${items.length}` : 'Ничего не найдено';
 }
