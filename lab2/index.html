@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Публикации — лабораторная №2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container" aria-labelledby="page-title">
+    <header>
+      <p class="eyebrow">Лабораторная работа №2</p>
+      <h1 id="page-title">Публикации</h1>
+      <p>Данные загружаются из открытого API JSONPlaceholder.</p>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Поиск по заголовку">
+        <button id="reload">Обновить</button>
+      </div>
+
+      <p id="status" class="status">Загрузка...</p>
+      <ul id="posts" class="posts"></ul>
+    </main>
+    <footer>Источник данных: JSONPlaceholder</footer>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
